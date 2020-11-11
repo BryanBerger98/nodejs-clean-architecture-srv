@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-clean-architecture-srv",
+  "version": "1.0.0",
+  "description": "Clean Architecture",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon src/app.js --exec babel-node",
+    "build": "babel src -d dist",
+    "production": "npm i && babel src -d dist && NODE_ENV=production node dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.15",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "simple-node-logger": "^18.12.24"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
