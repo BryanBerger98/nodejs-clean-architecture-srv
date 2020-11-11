@@ -1,2 +1,0 @@
-13:24:23.522 INFO  ::1 200 GET /api/todo-lists/get/5fabb729b6844151ecad18dc 18ms 
-13:37:05.815 INFO  ::1 200 GET /api/todo-lists/send-complete-todo-list-email/5fabc5b1adbdfc5a6114878f 1119ms 
