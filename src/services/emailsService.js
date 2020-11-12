@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { environment } from '../../env';
+import { environment } from '../env';
 
 export default class EmailsService {
 

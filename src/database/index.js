@@ -1,10 +1,11 @@
 import mongoose from 'mongoose';
 import todoListSchema from './schemas/TodoListSchema';
 import { environment } from '../env';
+import TodoListRepository from './repositories/todoListRepository';
 
 export default class Database {
 
-    todoListSchema = todoListSchema;
+    todoListRepository = new TodoListRepository(todoListSchema);
 
     constructor() {
         this.initMongooseConnection();

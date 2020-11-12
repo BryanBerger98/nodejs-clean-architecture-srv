@@ -1,6 +1,9 @@
-export default class TodoListsData {
+import TodoListRepositoryInterface from "../../app/interfaces/todoListRepositoryInterface";
+
+export default class TodoListRepository extends TodoListRepositoryInterface {
 
     constructor(TodoListSchema) {
+        super();
         this.TodoListSchema = TodoListSchema;
     }
 
@@ -13,7 +16,7 @@ export default class TodoListsData {
 
     getAllTodoLists() {
         return new Promise((resolve, reject) => {
-            this.TodoListSchema.find({}, {created_by: -1}).exec().then(resolve).catch(reject);
+            this.TodoListSchema.find({}, {created_by: 0}).exec().then(resolve).catch(reject);
         });
     }
 
